@@ -10,6 +10,7 @@ from bot_logic import gen_pass
 bot = telebot.TeleBot(TG_API_TOKEN)
 
 
+
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
 #    bot.reply_to(message, "Привет! Я твой Telegram бот. Напиши что-нибудь! Команды : /bye ends the bot, /tips")
