@@ -49,28 +49,6 @@ def send_mem(message):
     random_mem = choice(os.listdir('images')) #'mem2.jpeg'
     with open(f'images/{random_mem }', 'rb') as f:
         bot.send_photo(message.chat.id, f)
-    #bot.send_message(message.chat_id, f'Привет , {message.from_user.first_name}!\nЯ бот который отпровляет мемы')
     
-#@bot.message_handler(func=lambda message: 'Dead rails' in message.text)
-#def handle_dr_text(message):
-    #bot.reply_to(message, 'Супер, здесь вещи, которые тебе могут помочь!')
-
-#@bot.message_handler(func=lambda message: 'Dump' in message.text)
-#def handle_dump_text(message):
-    #bot.reply_to(message, 'Супер, здесь вещи, которые тебе могут помочь!')
-
-
-#content_types=['audio', 'photo', 'voice', 'video', 'document',
-    # 'text', 'location', 'contact', 'sticker']
-
-#@bot.message_handler(content_types=['sticker'])
-#def handle_sticker(message):
-    #bot.reply_to(message, 'Крутой стикер!')
-
-#@bot.message_handler(func=lambda message: 'банан' in message.text)
-#def handle_banana_text(message):
-    #bot.reply_to(message, 'Бананы это круто!')
-
-gen_pass(10)
 
 bot.polling()
